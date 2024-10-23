@@ -5,11 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Multigram</title>
+    <title>Account Page</title>
   </head>
   <body>
-    <h1>Account Page</h1>
-
+    <header class="nav-bar">
+      <h2>Multigram</h2>
+      <nav>
+        <a href="feed.html">Feed</a>
+        <a href="feed.html">Home</a>
+        <a href="feed.html">Explore</a>
+        <a href="index.html">Login</a>
+      </nav>
+    </header>
+    <main class="account-content">
+      <div class="user-info" onclick="window.location.href='account.html'">
+        <img
+          src="https://picsum.photos/40"
+          alt="Profile Image"
+          class="profile-img2"
+        />
+        <div class="user-details">
+          <h3>Multigram User</h3>
+          <p>Some additional user info</p>
+        </div>
+      </div>
+      <!-- Image Gallery Section -->
+      <div class="image-gallery">
+        <img src="https://picsum.photos/200/150" alt="Image 1" />
+        <img src="https://picsum.photos/200/151" alt="Image 2" />
+        <img src="https://picsum.photos/200/152" alt="Image 3" />
+        <img src="https://picsum.photos/200/153" alt="Image 4" />
+        <img src="https://picsum.photos/200/154" alt="Image 5" />
+        <!-- Add more images as needed -->
+      </div>
+    </main>
+    <footer class="nav-bar"></footer>
     <script src="script.js"></script>
   </body>
 </html>
