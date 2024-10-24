@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Login Page</title>
-  </head>
-  <body>
-    <div class="landing-page">
-      <div class="login-container">
-        <h1>Multigram</h1>
-        <form id="login-form">
-          <input type="text" id="username" placeholder="Username" required />
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
-          <button type="submit" class="button">Log In</button>
-        </form>
-        <p>Don't have an account? <a href="#">Sign up</a></p>
-      </div>
-    </div>
+    <title>Account Page</title>
+</head>
+<body>
+    <header class="nav-bar">
+        <h2>Multigram</h2>
+        <nav class="footer-nav">
+          
+          <a href="feed.html" class="footer-link">feed</a>
+          <a href="login.html" class="footer-link">login</a>
+          <a href="account.html" class="footer-link">account</a>
+      </nav>
+    </header>
+    <main class="account-content">
+        <div class="main-wrap">
+            <div class="user-info" onclick="window.location.href='account.html'">
+                <img
+                src="https://picsum.photos/100"
+                alt="Profile Image"
+                class="profile-img2"
+                />
+                <div class="user-details">
+                    <h3>Multigram User</h3>
+                    <p>Some additional user info</p>
+                    <div class="button-container">
+                        <button class="button follow">Follow</button>
+                        <button class="button message">Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Image Gallery Section -->
+        <div class="image-gallery">
+            <img src="https://picsum.photos/300/200" alt="Image 1" />
+            <img src="https://picsum.photos/300/201" alt="Image 2" />
+            <img src="https://picsum.photos/300/202" alt="Image 3" />
+            <img src="https://picsum.photos/300/203" alt="Image 4" />
+            <img src="https://picsum.photos/300/204" alt="Image 5" />
+        </div>
+    </main>
+    <footer class="nav-bar"></footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
